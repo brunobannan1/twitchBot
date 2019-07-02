@@ -17,7 +17,7 @@ public class Main {
             synchronized (lock) {
                 msg.sendMessage("PRIVMSG #" + channel + " :" + arr[0]);
                 try {
-                    lock.wait(1250);
+                    lock.wait(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -27,7 +27,7 @@ public class Main {
             synchronized (lock) {
                 msg.sendMessage("PRIVMSG #" + channel + " :" + arr[1]);
                 try {
-                    lock.wait(1250);
+                    lock.wait(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -37,7 +37,7 @@ public class Main {
             synchronized (lock) {
                 msg.sendMessage("PRIVMSG #" + channel + " :" + arr[2]);
                 try {
-                    lock.wait(1250);
+                    lock.wait(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -47,7 +47,7 @@ public class Main {
             synchronized (lock) {
                 msg.sendMessage("PRIVMSG #" + channel + " :" + arr[1]);
                 try {
-                    lock.wait(1250);
+                    lock.wait(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -57,7 +57,7 @@ public class Main {
             synchronized (lock) {
                 msg.sendMessage("PRIVMSG #" + channel + " :" + arr[0]);
                 try {
-                    lock.wait(1250);
+                    lock.wait(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

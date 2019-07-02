@@ -50,6 +50,15 @@ public class Message {
         }
     }
 
+    public void chatMessage(String message, String channel) {
+        try {
+            out.write("PRIVMSG #" + channel + " :" + message + "\r\n");
+            out.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     public String receiveMessage() {
         String line = null;
         try {
